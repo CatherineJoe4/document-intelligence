@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CREDORA — Financial Document Intelligence</title>
+
+    <meta
+        name="description"
+        content="CREDORA — Structured intelligence for financial documents."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body>
+
+<!-- =========================================================
+     SITE HEADER
+========================================================= -->
+
+<header class="site-header" id="site-header">
+
+    <div class="header-inner">
+
+        <!-- =================================================
+             LARGE BRANDING AREA
+        ================================================== -->
+
+        <div class="header-branding">
+
+            <div class="brand-row">
+
+                <!-- CSS-BASED CREDORA ORBIT LOGO -->
+                <div
+                    class="brand-mark"
+                    aria-label="CREDORA logo"
+                >
+
+                    <span class="orbit orbit-one"></span>
+                    <span class="orbit orbit-two"></span>
+                    <span class="orbit orbit-three"></span>
+
+                    <span class="logo-circle">
+
+                        <span class="logo-diamond"></span>
+
+                        <span class="logo-word">
+                            CREDORA
+                        </span>
+
+                    </span>
+
+                </div>
+
+
+                <!-- BRAND NAME + TAGLINE -->
+
+                <div class="brand-copy">
+
+                    <div class="brand-name">
+                        CREDORA
+                    </div>
+
+                    <div class="brand-tagline">
+                        Structured intelligence for financial documents
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             COMPACT BRAND FOR STICKY NAV
+        ================================================== -->
+
+        <div
+            class="compact-brand"
+            id="compact-brand"
+            aria-label="CREDORA"
+        >
+
+            <span class="compact-logo-symbol">
+
+                <span class="compact-orbit compact-orbit-one"></span>
+                <span class="compact-orbit compact-orbit-two"></span>
+
+                <span class="compact-diamond"></span>
+
+            </span>
+
+            <span class="compact-brand-name">
+                CREDORA
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="main-nav"
+            id="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <button
+                class="nav-button active"
+                type="button"
+                data-page="dashboard"
+            >
+                Dashboard
+            </button>
+
+            <button
+                class="nav-button"
+                type="button"
+                data-page="documents"
+            >
+                Documents
+            </button>
+
+            <button
+                class="nav-button"
+                type="button"
+                data-page="upload"
+            >
+                Upload
+            </button>
+
+        </nav>
+
+
+        <!-- =================================================
+             API STATUS
+        ================================================== -->
+
+        <div
+            class="api-status"
+            id="api-status"
+            aria-live="polite"
+        >
+
+            <span class="api-status-dot"></span>
+
+            <div class="api-status-copy">
+
+                <span class="api-status-label">
+                    API
+                </span>
+
+                <span
+                    class="api-status-text"
+                    id="api-status-text"
+                >
+                    Checking
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN APPLICATION
+========================================================= -->
+
+<main class="app-main">
+
+
+    <!-- =====================================================
+         DASHBOARD PAGE
+    ====================================================== -->
+
+    <section
+        class="page active"
+        id="dashboard"
+        data-page-section="dashboard"
+    >
+
+        <!-- Dashboard Hero -->
+
+        <div class="dashboard-hero">
+
+            <div class="hero-copy">
+
+                <div class="hero-kicker">
+                    DOCUMENT INTELLIGENCE
+                </div>
+
+                <h1>
+                    Turn financial documents
+                    into intelligence.
+                </h1>
+
+                <p class="hero-description">
+                    Extract structured information, validate
+                    financial relationships, and preserve
+                    evidence from every document.
+                </p>
+
+                <div class="hero-actions">
+
+                    <button
+                        class="primary-button"
+                        type="button"
+                        data-page="upload"
+                    >
+                        Process a document
+                        <span class="button-arrow">→</span>
+                    </button>
+
+                    <button
+                        class="secondary-button"
+                        type="button"
+                        data-page="documents"
+                    >
+                        Explore documents
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Abstract visual -->
+
+            <div class="hero-visual">
+
+                <div class="hero-visual-orbits">
+
+                    <span class="hero-orbit hero-orbit-a"></span>
+                    <span class="hero-orbit hero-orbit-b"></span>
+                    <span class="hero-orbit hero-orbit-c"></span>
+
+                    <div class="hero-core">
+
+                        <span class="hero-diamond"></span>
+
+                        <span class="hero-core-label">
+                            CREDORA
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-pipeline">
+
+                    <span>EXTRACT</span>
+                    <i></i>
+                    <span>VALIDATE</span>
+                    <i></i>
+                    <span>STORE</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Overview -->
+
+        <div class="section-heading dashboard-section-heading">
+
+            <div>
+                <span class="section-kicker">
+                    OVERVIEW
+                </span>
+
+                <h2>
+                    Processing activity
+                </h2>
+            </div>
+
+            <span class="section-note">
+                Current document history
+            </span>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <div class="stats-grid">
+
+            <!-- Total -->
+
+            <article class="stat-card stat-card-total">
+
+                <div class="stat-card-top">
+
+                    <span class="stat-label">
+                        TOTAL DOCUMENTS
+                    </span>
+
+                    <span class="stat-icon">
+                        ◇
+                    </span>
+
+                </div>
+
+                <div
+                    class="stat-value"
+                    id="stat-total"
+                >
+                    0
+                </div>
+
+                <p class="stat-description">
+                    Documents processed by CREDORA
+                </p>
+
+                <span class="stat-decoration"></span>
+
+            </article>
+
+
+            <!-- Passed -->
+
+            <article class="stat-card stat-card-passed">
+
+                <div class="stat-card-top">
+
+                    <span class="stat-label">
+                        PASSED
+                    </span>
+
+                    <span class="stat-icon">
+                        ✓
+                    </span>
+
+                </div>
+
+                <div
+                    class="stat-value"
+                    id="stat-passed"
+                >
+                    0
+                </div>
+
+                <p class="stat-description">
+                    Documents passing validation
+                </p>
+
+                <span class="stat-decoration"></span>
+
+            </article>
+
+
+            <!-- Failed -->
+
+            <article class="stat-card stat-card-failed">
+
+                <div class="stat-card-top">
+
+                    <span class="stat-label">
+                        FAILED
+                    </span>
+
+                    <span class="stat-icon">
+                        !
+                    </span>
+
+                </div>
+
+                <div
+                    class="stat-value"
+                    id="stat-failed"
+                >
+                    0
+                </div>
+
+                <p class="stat-description">
+                    Documents requiring attention
+                </p>
+
+                <span class="stat-decoration"></span>
+
+            </article>
+
+        </div>
+
+
+        <!-- Recent Activity -->
+
+        <div class="activity-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        ACTIVITY
+                    </span>
+
+                    <h2>
+                        Recent documents
+                    </h2>
+                </div>
+
+                <button
+                    class="text-button"
+                    type="button"
+                    data-page="documents"
+                >
+                    View all →
+                </button>
+
+            </div>
+
+
+            <div class="table-shell recent-table-shell">
+
+                <div class="table-scroll">
+
+                    <table class="documents-table">
+
+                        <thead>
+                            <tr>
+                                <th>Document</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Processed</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="recent-documents-table-body">
+
+                            <tr class="table-loading-row">
+
+                                <td colspan="5">
+                                    Loading documents...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DOCUMENTS PAGE
+    ====================================================== -->
+
+    <section
+        class="page"
+        id="documents"
+        data-page-section="documents"
+    >
+
+        <div class="page-header">
+
+            <div>
+
+                <span class="section-kicker">
+                    DOCUMENT LIBRARY
+                </span>
+
+                <h1>
+                    Documents
+                </h1>
+
+                <p>
+                    Review and open previously processed
+                    financial documents.
+                </p>
+
+            </div>
+
+            <div class="page-header-meta">
+                <span>
+                    Stored processing results
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- Filters -->
+
+        <div class="document-controls">
+
+            <div class="search-control">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="search"
+                    id="document-search"
+                    placeholder="Search documents..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <select
+                id="document-type-filter"
+                class="filter-select"
+            >
+
+                <option value="">
+                    All document types
+                </option>
+
+                <option value="invoice">
+                    Invoice
+                </option>
+
+                <option value="balance_sheet">
+                    Balance Sheet
+                </option>
+
+                <option value="profit_and_loss">
+                    Profit &amp; Loss
+                </option>
+
+                <option value="cash_flow_statement">
+                    Cash Flow Statement
+                </option>
+
+            </select>
+
+
+            <select
+                id="document-status-filter"
+                class="filter-select"
+            >
+
+                <option value="">
+                    All statuses
+                </option>
+
+                <option value="PASS">
+                    Passed
+                </option>
+
+                <option value="FAILED">
+                    Failed
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Document count -->
+
+        <div class="documents-list-heading">
+
+            <strong id="document-count">
+                0 documents
+            </strong>
+
+            <span>
+                Current document history
+            </span>
+
+        </div>
+
+
+        <!-- Documents table -->
+
+        <div class="table-shell documents-list-shell">
+
+            <div class="table-scroll">
+
+                <table class="documents-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Document
+                            </th>
+
+                            <th>
+                                Type
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Processed
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="all-documents-table-body">
+
+                        <tr class="table-loading-row">
+
+                            <td colspan="5">
+                                Loading documents...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         UPLOAD PAGE
+    ====================================================== -->
+
+    <section
+        class="page"
+        id="upload"
+        data-page-section="upload"
+    >
+
+        <div class="page-header">
+
+            <div>
+
+                <span class="section-kicker">
+                    PROCESS A DOCUMENT
+                </span>
+
+                <h1>
+                    Upload financial document
+                </h1>
+
+                <p>
+                    Select the document type and upload a
+                    PDF, JPG, or PNG file for processing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="upload-layout">
+
+            <!-- Upload form -->
+
+            <div class="upload-card">
+
+                <div class="upload-card-heading">
+
+                    <div>
+
+                        <span class="card-kicker">
+                            DOCUMENT TYPE
+                        </span>
+
+                        <h2>
+                            What are you processing?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="document-type">
+                        Document type
+                    </label>
+
+                    <select
+                        id="document-type"
+                        class="document-type-select"
+                    >
+
+                        <option value="">
+                            Select document type
+                        </option>
+
+                        <option value="invoice">
+                            Invoice
+                        </option>
+
+                        <option value="balance_sheet">
+                            Balance Sheet
+                        </option>
+
+                        <option value="profit_and_loss">
+                            Profit &amp; Loss
+                        </option>
+
+                        <option value="cash_flow_statement">
+                            Cash Flow Statement
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Drop Zone -->
+
+                <div
+                    class="drop-zone"
+                    id="drop-zone"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Upload document"
+                >
+
+                    <div class="drop-zone-icon">
+                        ↑
+                    </div>
+
+                    <h3>
+                        Drop your document here
+                    </h3>
+
+                    <p>
+                        or browse from your computer
+                    </p>
+
+                    <span class="drop-zone-formats">
+                        PDF · JPG · PNG · MAX 10 MB · MAX 3 PAGES
+                    </span>
+
+                    <button
+                        type="button"
+                        class="browse-button"
+                        id="browse-button"
+                    >
+                        Browse files
+                    </button>
+
+                    <input
+                        type="file"
+                        id="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png"
+                        hidden
+                    >
+
+                </div>
+
+
+                <!-- Selected file -->
+
+                <div
+                    class="selected-file"
+                    id="selected-file"
+                    hidden
+                >
+
+                    <div class="selected-file-icon">
+                        ◇
+                    </div>
+
+                    <div class="selected-file-info">
+
+                        <strong id="file-name">
+                            —
+                        </strong>
+
+                        <span id="file-size">
+                            —
+                        </span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="remove-file"
+                        id="remove-file"
+                        aria-label="Remove selected file"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <!-- Upload message -->
+
+                <div
+                    class="upload-message"
+                    id="upload-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- Process -->
+
+                <button
+                    type="button"
+                    class="process-button"
+                    id="process-button"
+                    disabled
+                >
+                    Process document
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- Processing pipeline -->
+
+            <aside class="pipeline-card">
+
+                <span class="card-kicker">
+                    PROCESSING PIPELINE
+                </span>
+
+                <h2>
+                    From document
+                    to intelligence.
+                </h2>
+
+                <p>
+                    CREDORA validates the file, extracts
+                    visible information, checks financial
+                    relationships, and stores the result.
+                </p>
+
+
+                <div class="pipeline-steps">
+
+                    <div class="pipeline-step">
+
+                        <span class="pipeline-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Validate
+                            </strong>
+
+                            <span>
+                                File type, integrity &amp; page count
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span class="pipeline-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Extract
+                            </strong>
+
+                            <span>
+                                Structured information &amp; evidence
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span class="pipeline-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Validate
+                            </strong>
+
+                            <span>
+                                Financial calculations &amp; reconciliation
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span class="pipeline-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Store
+                            </strong>
+
+                            <span>
+                                Persistent processing result
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESULT PAGE
+    ====================================================== -->
+
+    <section
+        class="page"
+        id="result"
+        data-page-section="result"
+    >
+
+        <!-- Result header -->
+
+        <div class="result-header">
+
+            <button
+                type="button"
+                class="back-button"
+                id="back-to-documents"
+            >
+                ←
+                <span>
+                    Back to documents
+                </span>
+            </button>
+
+
+            <div class="result-heading">
+
+                <div class="result-type-row">
+
+                    <span
+                        class="result-document-type"
+                        id="result-document-type"
+                    >
+                        Document
+                    </span>
+
+                    <span
+                        class="status-badge"
+                        id="result-status"
+                    >
+                        —
+                    </span>
+
+                </div>
+
+                <h1 id="result-document-name">
+                    Document result
+                </h1>
+
+                <p id="result-subtitle">
+                    Structured extraction and financial validation
+                </p>
+
+            </div>
+
+
+            <div class="result-actions">
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="toggle-raw-json"
+                >
+                    View raw JSON
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Result content -->
+
+        <div
+            class="result-content"
+            id="result-content"
+        >
+
+            <!-- Populated dynamically by app.js -->
+
+            <div class="result-loading">
+                Loading result...
+            </div>
+
+        </div>
+
+
+        <!-- Raw JSON -->
+
+        <section
+            class="raw-json-section"
+            id="raw-json-section"
+            hidden
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        RAW RESPONSE
+                    </span>
+
+                    <h2>
+                        JSON
+                    </h2>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="copy-json-button"
+                >
+                    Copy JSON
+                </button>
+
+            </div>
+
+            <pre
+                class="raw-json-content"
+                id="raw-json-content"
+            ></pre>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     GLOBAL LOADING OVERLAY
+========================================================= -->
+
+<div
+    class="loading-overlay"
+    id="loading-overlay"
+    hidden
+>
+
+    <div class="loading-panel">
+
+        <div class="loading-orbit">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div class="loading-diamond"></div>
+
+        </div>
+
+        <strong>
+            Processing document
+        </strong>
+
+        <span>
+            Extracting, validating and storing...
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+    hidden
+>
+
+    <div
+        class="toast-icon"
+        id="toast-icon"
+    >
+        ✓
+    </div>
+
+    <div class="toast-content">
+
+        <strong id="toast-title">
+            Success
+        </strong>
+
+        <span id="toast-message">
+            Operation completed.
+        </span>
+
+    </div>
+
+    <button
+        type="button"
+        class="toast-close"
+        id="toast-close"
+        aria-label="Close notification"
+    >
+        ×
+    </button>
+
+</div>
+
+
+<!-- =========================================================
+     APPLICATION JAVASCRIPT
+========================================================= -->
+
+<script
+    src="/static/js/app.js"
+    defer
+></script>
+
+</body>
+</html>
