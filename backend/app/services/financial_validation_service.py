@@ -1,16 +1,4 @@
-"""
-Financial validation service.
 
-The extraction layer is responsible for reading what the document says.
-This service is responsible for deterministic financial calculations.
-
-Important:
-- Do not invent missing values.
-- Missing/unreadable values produce NOT_APPLICABLE.
-- Parentheses/brackets are treated as negative numbers.
-- Comparative periods are validated independently.
-- Validation is based on financial concepts rather than exact document wording.
-"""
 
 from __future__ import annotations
 

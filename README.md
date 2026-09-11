@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Python-3.12-blue" alt="Python">
   <img src="https://img.shields.io/badge/FastAPI-API-green" alt="FastAPI">
   <img src="https://img.shields.io/badge/AI-Gemini-purple" alt="Gemini">
-  <img src="https://img.shields.io/badge/Database-SQLite-lightgrey" alt="SQLite">
+  <img src="https://img.shields.io/badge/Database-SQLite%20%7C%20PostgreSQL-lightgrey" alt="SQLite | PostgreSQL">
   <img src="https://img.shields.io/badge/Tests-12%20passed-success" alt="Tests">
 </p>
 
@@ -29,6 +29,14 @@ The system is designed around one core principle:
 > **Extract what is present, never invent what is missing, and validate what can be mathematically verified.**
 
 ---
+## Live Demo & Resources
+
+| Resource | Link |
+|---|---|
+| Live Application | https://credora-backend-v792.onrender.com |
+| Backend API | https://credora-backend-v792.onrender.com/api/v1/health |
+| Swagger / OpenAPI | https://credora-backend-v792.onrender.com/docs |
+| GitHub Repository | https://github.com/CatherineJoe4/document-intelligence |
 
 ## Key Capabilities
 
@@ -320,15 +328,21 @@ document-intelligence/
 │       ├── test_invoice_validation.py
 │       └── test_validation.py
 │
-└── frontend/
-    ├── templates/
-    │   └── index.html
-    │
-    └── static/
-        ├── css/
-        │   └── style.css
-        └── js/
-            └── app.js
+├──frontend/
+│    ├── templates/
+│    │   └── index.html
+│    │
+│    └── static/
+│        ├── css/
+│        │   └── style.css
+│        └── js/
+│           └── app.js
+├── docs/
+│   ├── architecture.png
+│   └── solution_presentation.pdf
+│
+└── sample_outputs/
+    └── sample_cash_flow_statement.json
 ```
 
 ---
@@ -706,7 +720,7 @@ Potential production enhancements include:
 
 ### Infrastructure
 
-- PostgreSQL
+- Scalable PostgreSQL configuration and database optimization
 - Object storage
 - Background processing
 - Queue-based architecture
@@ -745,6 +759,11 @@ The application itself uses the configured **Google Gemini API** for AI-assisted
 Financial validation is implemented separately using deterministic Python logic.
 
 ---
+### Project Artifacts
+
+- [Architecture Diagram](docs/architecture.png)
+- [Solution Presentation](docs/solution_presentation.pdf)
+- [Sample JSON Output](sample_outputs/sample_cash_flow_statement.json)
 
 # Project Status
 
