@@ -3827,7 +3827,7 @@ body {
 .site-header.scrolled,
 .site-header.is-scrolled,
 .site-header[data-scrolled="true"] {
-    position: fixed !important;
+    position: sticky !important;
 
     top: 0 !important;
     left: 0 !important;

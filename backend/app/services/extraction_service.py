@@ -199,13 +199,48 @@ If the invoice contains both:
 - Net Amount
 - Gross Amount
 
-determine which one is the actual reported line total based on
-the invoice's table structure and summary totals.
+then preserve the distinction between them.
 
-If the invoice clearly distinguishes taxable/net amount from
-tax-inclusive/gross amount, preserve that distinction.
+IMPORTANT:
+- "Net Amount", "Net Worth", "Taxable Value", or equivalent
+  means the line amount BEFORE tax.
+- "Gross Amount", "Gross Worth", "Amount Including Tax",
+  "Amount Inc. Tax", or equivalent means the line amount
+  AFTER tax.
+- If both net/pre-tax and gross/tax-inclusive amounts are
+  explicitly shown for the same line, use the NET/PRE-TAX
+  amount as "line_total".
+- Store the gross/tax-inclusive amount in the table data or
+  source_text when it is visibly present.
+- Do NOT replace the net line amount with the gross amount
+  merely because the gross amount is the final amount shown
+  on the row.
 
-If there is only one reported line amount, use that amount.
+For example, if a row visibly shows:
+
+Quantity = 1
+Unit Price = 8.49
+Net Amount = 8.49
+GST = 0.51
+Gross Amount = 9.00
+
+then extract:
+
+"quantity": 1
+"unit_price": 8.49
+"line_total": 8.49
+"tax": 0.51
+
+The 9.00 gross amount must NOT be placed into "line_total"
+when the invoice explicitly distinguishes it from the
+pre-tax/net amount.
+
+If there is only one reported line amount and there is no
+clear distinction between net/pre-tax and gross/tax-inclusive
+amounts, use that reported amount as "line_total".
+
+If the line-total meaning cannot be determined reliably,
+return "line_total": null rather than guessing.
 
 
 ------------------------------------------------------------

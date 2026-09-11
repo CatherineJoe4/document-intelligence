@@ -971,36 +971,35 @@ def validate_invoice(
 
         # When an actual line tax amount is explicitly present, compare the
         # base amount + line tax to the reported line amount if possible.
+                # Calculate the line base amount independently for this line.
         line_base = None
         if quantity is not None and unit_price is not None:
             line_base = quantity * unit_price
 
         if line_base is not None and reported_line_total is not None:
+
+            # If this individual line has its own tax amount, validate
+            # Quantity × Unit Price against the reported line amount.
+            #
+            # The reported line_total represents the line's base/net amount.
+            # Tax is validated separately against the tax-inclusive amount
+            # when that amount is available in the table.
+            calculated_line_total = line_base
+
+            check_name = (
+                f"Line {index}: Quantity × Unit Price "
+                f"= Reported Line Total"
+            )
+
+            inputs = {
+                "line": index,
+                "description": description,
+                "quantity": quantity,
+                "unit_price": unit_price,
+            }
+
             if line_tax is not None:
-                calculated_line_total = line_base + line_tax
-                check_name = (
-                    f"Line {index}: Quantity × Unit Price + Line Tax "
-                    f"= Reported Line Total"
-                )
-                inputs = {
-                    "line": index,
-                    "description": description,
-                    "quantity": quantity,
-                    "unit_price": unit_price,
-                    "line_tax": line_tax,
-                }
-            else:
-                calculated_line_total = line_base
-                check_name = (
-                    f"Line {index}: Quantity × Unit Price "
-                    f"= Reported Line Total"
-                )
-                inputs = {
-                    "line": index,
-                    "description": description,
-                    "quantity": quantity,
-                    "unit_price": unit_price,
-                }
+                inputs["line_tax"] = line_tax
 
             validations.append(
                 _validation(
