@@ -511,6 +511,7 @@ def _find_concept_row(
 
         matcher = lambda label: (
             _contains_all(label, "total", "income")
+            or label.strip().lower() == "total"
         )
 
     elif concept == "interest_expended":
@@ -549,6 +550,7 @@ def _find_concept_row(
         matcher = lambda label: (
             _contains_all(label, "total", "expenditure")
             or _contains_all(label, "total", "expense")
+            or label.strip().lower() == "total"
         )
 
     elif concept == "profit_before_minority":
@@ -633,6 +635,7 @@ def _find_concept_row(
 
         matcher = lambda label: (
             _contains_all(label, "total", "profit")
+            or label.strip().lower() == "total"
         )
 
     elif concept == "total_appropriations":
